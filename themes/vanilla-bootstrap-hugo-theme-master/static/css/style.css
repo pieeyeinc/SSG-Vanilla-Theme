@@ -1,6 +1,28 @@
-.formcontainer {    
+.formcontainer {
     margin: 0 auto;
 }
 .padding-tb-20 {
     padding: 20px 0;
 }
+:root {
+    --color-background-primary: #ffffff;
+    --color-text-primary: #000000;
+    --font-body: 'Arial Black';
+}
+body {
+    background-color: var(--color-background-primary);
+    font-family: var(--font-body);
+    color: var(--color-text-primary);
+  }
+  #nav-border {
+    background-color: var(--color-background-primary);
+ }
+  #navText {
+    color: var(--color-text-primary);
+  }
+  #footerText{
+    color: var(--color-text-primary);
+  }
+  .odd{
+    background-color: 'transparent';
+  }

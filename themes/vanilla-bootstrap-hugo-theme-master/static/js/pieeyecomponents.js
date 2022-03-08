@@ -76,6 +76,37 @@ window.addEventListener("load", () => {
         });
 });
 
-// $( document ).ready(function() {
-    
-// });
+$(document).ready(function () {
+	var config_data = localStorage.getItem('config_data');
+	if (config_data != null) {
+		var config_data = JSON.parse(config_data);
+	} else {
+		var config_data = JSON.parse(document.querySelector("input[name=config_data]").value);
+	}
+	var r = document.querySelector(':root');
+	r.style.setProperty('--color-background-primary', config_data.color.backgroundcolor);
+	r.style.setProperty('--color-text-primary', config_data.color.fontcolor);
+	r.style.setProperty('--font-body', config_data.color.bodyFontFamily);
+	r.style.setProperty('--headerBackground', config_data.color.headerBackground);
+	r.style.setProperty('--navText', config_data.color.navText);
+	var config_data = JSON.parse(document.querySelector("input[name=config_data]").value);
+	// $('body').css('font-family' , config_data.font.bodyFontFamily);
+	// $('body').css('color' , config_data.color.fontcolor);
+	$('#nav-border').css('background-color', config_data.color.headerBackground);
+	$('#nav').css('color', config_data.color.navText);
+	$('#footer').css('background-color', config_data.color.footerBackground);
+	$('#footer > div').css('color', config_data.color.footerText);
+	$("#logo").attr("src", config_data.contents.logoUrl);
+	$("#footer > div").append(config_data.contents.footerText);
+	$(".bi-envelope-open").attr("fill", config_data.color.fontcolor);
+	$('.odd').css('background-color', 'transparent');
+	if (config_data.contents.hideFooter === true) {
+		$('#footer').hide();
+	}
+	if (config_data.contents.hideMenu === true) {
+		$('#nav-border').hide();
+	}
+	if (config_data.contents.hideHeader === true) {
+		$('#home-jumbotron').hide();
+	}
+});

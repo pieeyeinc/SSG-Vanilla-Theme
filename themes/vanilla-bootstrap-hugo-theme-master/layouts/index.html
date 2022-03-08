@@ -1,5 +1,4 @@
 {{ define "main" }}
-
 <div id="home-jumbotron" class="jumbotron text-center">
 {{ with .Content }}
   <h1>{{ $.Page.Title }}</h1>
@@ -15,6 +14,6 @@
 <input type="hidden" name="recaptcha_sitekey" value="{{ .Site.Params.recaptcha_sitekey }}">
 <input type="hidden" name="i18n_data" value="{{ .Site.Params.i18n_data }}">
     <div id="form" class="hidden">
-      <script type="text/javascript" src="{{ "js/element_updater.js" | absURL }}"></script>
+      <script type="text/javascript" src="./js/middleware.js"></script>
 {{ end }}
 
