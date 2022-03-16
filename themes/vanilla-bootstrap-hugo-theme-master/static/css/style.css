@@ -23,6 +23,9 @@ body {
   #footerText{
     color: var(--color-text-primary);
   }
-  .odd{
+.odd{
     background-color: 'transparent';
   }
+ .bi-envelope-open{
+fill: var(--color-text-primary);
+ }

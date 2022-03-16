@@ -8,12 +8,14 @@
   <p class="font-125">{{ .Site.Params.homeText | markdownify }}</p>
 {{ end }}
 </div>
-<input type="hidden" name="formConfig" value="{{ .Site.Params.twitter }}">
+<input type="hidden" name="formConfig" value="{{ .Site.Params.formdata }}">
 <input type="hidden" name="uuid" value="{{ .Site.Params.uuid }}">
 <input type="hidden" name="uuid_name" value="{{ .Site.Params.uuid_name }}">
 <input type="hidden" name="recaptcha_sitekey" value="{{ .Site.Params.recaptcha_sitekey }}">
 <input type="hidden" name="i18n_data" value="{{ .Site.Params.i18n_data }}">
     <div id="form" class="hidden">
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
       <script type="text/javascript" src="./js/middleware.js"></script>
 {{ end }}
 
