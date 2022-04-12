@@ -72,7 +72,7 @@ window.addEventListener("load", () => {
                     params = `?id=${submission.response.SendMessageResponse.SendMessageResult.MessageId}`;
                 } catch (e) {
                 }
-                window.location = `formarchtype/thankyou/${params}`;
+                window.location = `formarchtype/thankyou/index.html${params}`;
             });
             return form;
         });

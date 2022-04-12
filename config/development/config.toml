@@ -1,7 +1,9 @@
-baseURL = 'https://app.dev.pii.ai/'
+baseURL = '/'
 languageCode = 'en-us'
 title = 'Welcome to PieEye'
 theme = 'vanilla-bootstrap-hugo-theme-master'
+RelativeURLs=true
+CanonifyURLs=true
 [taxonomies]
 tag = "tags"
 
