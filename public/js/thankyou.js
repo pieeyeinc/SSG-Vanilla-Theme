@@ -1,5 +1,6 @@
 	window.onload = function() {
-		var id = document.querySelector("input[name=dsr_req_id]").value;
+		const urlParams = new URLSearchParams(window.location.search);
+		const id = urlParams.get("id");
 		if (id != null) {
 			document.title += " " + id;
 			document.getElementById('sa').append(

@@ -2,35 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Welcome to PieEye</title>
-    <link>https://app.pii.ai/</link>
+    <link>/</link>
     <description>Recent content on Welcome to PieEye</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 08 Feb 2022 18:01:38 +0530</lastBuildDate><atom:link href="https://app.pii.ai/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 08 Feb 2022 18:01:38 +0530</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Thankyou</title>
-      <link>https://app.pii.ai/formarchtype/thankyou/</link>
+      <link>/formarchtype/thankyou/</link>
       <pubDate>Tue, 08 Feb 2022 18:01:38 +0530</pubDate>
       
-      <guid>https://app.pii.ai/formarchtype/thankyou/</guid>
+      <guid>/formarchtype/thankyou/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Status</title>
-      <link>https://app.pii.ai/formarchtype/statusform/</link>
+      <link>/formarchtype/statusform/</link>
       <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://app.pii.ai/formarchtype/statusform/</guid>
+      <guid>/formarchtype/statusform/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Status Detail page</title>
-      <link>https://app.pii.ai/formarchtype/status-detail-page/</link>
+      <link>/formarchtype/status-detail-page/</link>
       <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://app.pii.ai/formarchtype/status-detail-page/</guid>
+      <guid>/formarchtype/status-detail-page/</guid>
       <description></description>
     </item>
     

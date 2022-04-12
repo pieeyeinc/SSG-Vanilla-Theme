@@ -2,21 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://app.pii.ai/formarchtype/</loc>
+    <loc>/formarchtype/</loc>
     <lastmod>2022-02-08T18:01:38+05:30</lastmod>
   </url><url>
-    <loc>https://app.pii.ai/formarchtype/thankyou/</loc>
+    <loc>/formarchtype/thankyou/</loc>
     <lastmod>2022-02-08T18:01:38+05:30</lastmod>
   </url><url>
-    <loc>https://app.pii.ai/</loc>
+    <loc>/</loc>
     <lastmod>2022-02-08T18:01:38+05:30</lastmod>
   </url><url>
-    <loc>https://app.pii.ai/formarchtype/statusform/</loc>
+    <loc>/formarchtype/statusform/</loc>
     <lastmod>2014-04-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://app.pii.ai/formarchtype/status-detail-page/</loc>
+    <loc>/formarchtype/status-detail-page/</loc>
     <lastmod>2014-04-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://app.pii.ai/tags/</loc>
+    <loc>/tags/</loc>
   </url>
 </urlset>

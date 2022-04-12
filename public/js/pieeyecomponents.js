@@ -24,7 +24,9 @@ window.addEventListener("load", () => {
     )
         .then((form) => {
             // Prevent the submission from going to the form.io server.
-            /*form.nosubmit = true;
+            form.nosubmit = true;
+            const XAPIKEY = 'J8s1iLFZCS4bQeJB8U5On7li4b4usbXLaCAlAFuI';
+            const PIIAIKEY = 'eyJ0eXBlIjoiSldUIiwia2lkIjoiVWdNVk1uSUhBRGVqYVRPUEhaa3VzZ0YwMXFfVkNZbW95eGtld2l1Nml5USIsImFsZyI6IlJTMjU2In0.eyJ0ZW5hbnQiOiIxIiwid29ya3NwYWNlIjoiOTZlNTRkMGMtOGMxNS00ODdiLWJmODEtYTVkMjkwZmM0YjdjIiwiaXNzIjoiaHR0cHM6Ly9hcHAuZGV2LnBpaS5haS9wdWJsaWMvMSIsImF1ZCI6Imh0dHBzOi8vZHNycC1hcGkuZGV2LnBpaS5haSIsInN1YiI6ImRhM2U4OTc3LWI2ZjAtNGM5OC05ZjExLTQzMTU0OWY4Yjc2MyIsImp0aSI6IllPVXY2eFhXd0tKeXdhYTN2T0dfVkEiLCJpYXQiOjE2NDY5MTc4OTN9.CwV8YRikOjLylLp1Gc55FtN4PNYJEWWKrMsmQZFAjfHbf6rALcyGUKSr6iCxzXcR7Y5teLrAG2v5mbAft5N9PIO8z9UJgbOaepN8zowUWznxeehx9e0kI3l_xrEC2nauPQ6mqQcGO8b8XGEHW3pG-d_HzNLp8s602TOTeMB97xj84V8z9Oo6de7-l5iETlDy-SaiobPAKMHdkbKpkMaUZC1cfUdY9jRs23YLqZ_JRJV8sXOpB9LO1uU2ixXQuUz54FQVtiuoicTZIUig9Y9Vtc7AKUhM9g6U8IQM55DJrSI_8W0FEMljThrNRFBiyLlnLutzpYcf0EAtIfvqgoJsjw';
             // Triggered when they click the submit button.
             form.on("submit", (submission) => {
                 submission.extensions = {
@@ -53,7 +55,7 @@ window.addEventListener("load", () => {
                         form.emit("submitDone", submission);
                     });
             });
-            return form;*/
+            return form;
         })
         .then((form) => {
             window.setLanguage = function (lang) {
@@ -64,52 +66,49 @@ window.addEventListener("load", () => {
         })
         .then((form) => {
             // What to do when the submit begins.
-            /*form.on("submitDone", (submission) => {
+            form.on("submitDone", (submission) => {
                 let params = "";
                 try {
                     params = `?id=${submission.response.SendMessageResponse.SendMessageResult.MessageId}`;
                 } catch (e) {
                 }
-                window.location = `thanks.html${params}`;
+                window.location = `formarchtype/thankyou/index.html${params}`;
             });
-            return form;*/
+            return form;
         });
 });
 
-$( document ).ready(function() {
-    var config_data = localStorage.getItem('config_data');
-						if(config_data != null){
-                            var config_data = JSON.parse(config_data);                            
-						}else{
-                            var config_data = JSON.parse(document.querySelector("input[name=config_data]").value);
-                        }
-var r = document.querySelector(':root');
-r.style.setProperty('--color-background-primary', config_data.color.backgroundcolor); 
-r.style.setProperty('--color-text-primary', config_data.color.fontcolor); 
-r.style.setProperty('--font-body', config_data.color.bodyFontFamily);
-r.style.setProperty('--headerBackground', config_data.color.headerBackground);
-r.style.setProperty('--navText', config_data.color.navText); 
-var config_data = JSON.parse(document.querySelector("input[name=config_data]").value);
-// $('body').css('font-family' , config_data.font.bodyFontFamily);
-// $('body').css('color' , config_data.color.fontcolor);
-$('#nav-border').css('background-color' , config_data.color.headerBackground);    
-$('#nav').css('color' , config_data.color.navText);
-$('#footer').css('background-color' , config_data.color.footerBackground);
-$('#footer > div').css('color' , config_data.color.footerText);
-$("#logo").attr("src", config_data.contents.logoUrl);
-$("#footer > div").append(config_data.contents.footerText);
-$(".bi-envelope-open").attr("fill", config_data.color.fontcolor);
-$('.odd').css('background-color' , 'transparent');     
-if(config_data.contents.hideFooter === true)
-{
- $('#footer').hide();
-}
-if(config_data.contents.hideMenu === true)
-{
- $('#nav-border').hide();
-}
-if(config_data.contents.hideHeader === true)
-{
- $('#home-jumbotron').hide();
-}
+$(document).ready(function () {
+	var config_data = localStorage.getItem('config_data');
+	if (config_data != null) {
+		var config_data = JSON.parse(config_data);
+	} else {
+		var config_data = JSON.parse(document.querySelector("input[name=config_data]").value);
+	}
+	var r = document.querySelector(':root');
+	r.style.setProperty('--color-background-primary', config_data.color.backgroundcolor);
+	r.style.setProperty('--color-text-primary', config_data.color.fontcolor);
+	r.style.setProperty('--font-body', config_data.color.bodyFontFamily);
+	r.style.setProperty('--headerBackground', config_data.color.headerBackground);
+	r.style.setProperty('--navText', config_data.color.navText);
+	var config_data = JSON.parse(document.querySelector("input[name=config_data]").value);
+	// $('body').css('font-family' , config_data.font.bodyFontFamily);
+	// $('body').css('color' , config_data.color.fontcolor);
+	$('#nav-border').css('background-color', config_data.color.headerBackground);
+	$('#nav').css('color', config_data.color.navText);
+	$('#footer').css('background-color', config_data.color.footerBackground);
+	$('#footer > div').css('color', config_data.color.footerText);
+	$("#logo").attr("src", config_data.contents.logoUrl);
+	$("#footer > div").append(config_data.contents.footerText);
+	$(".bi-envelope-open").attr("fill", config_data.color.fontcolor);
+	$('.odd').css('background-color', 'transparent');
+	if (config_data.contents.hideFooter === true) {
+		$('#footer').hide();
+	}
+	if (config_data.contents.hideMenu === true) {
+		$('#nav-border').hide();
+	}
+	if (config_data.contents.hideHeader === true) {
+		$('#home-jumbotron').hide();
+	}
 });

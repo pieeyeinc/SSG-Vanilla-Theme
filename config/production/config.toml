@@ -1,7 +1,9 @@
-baseURL = 'https://app.pii.ai/'
+baseURL = '/'
 languageCode = 'en-us'
 title = 'Welcome to PieEye'
 theme = 'vanilla-bootstrap-hugo-theme-master'
+RelativeURLs=true
+CanonifyURLs=true
 [taxonomies]
 tag = "tags"
 
@@ -66,7 +68,7 @@ status_details_data = '{ "requestId": "9104c4bb-ea8b-41ac-a3b5-445f8e16796e", "c
 [[menu.nav]]
 name = "DSR Request"
 pre = "home"
-url = "/"
+url = "/index.html"
 weight = 1
 
 [[menu.nav]]
