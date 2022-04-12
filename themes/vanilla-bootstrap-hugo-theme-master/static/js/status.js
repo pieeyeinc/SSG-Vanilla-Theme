@@ -50,9 +50,9 @@
                 document.getElementById("statusicon").classList.add("fa-check-square");
                 document.getElementById("statusicon").style.color = "green";
               } else if (resultJSON.status === "Rejected") {
-                window.location = "../status-detail-page?id=" + submission.data.dsrid;
+                window.location = "../status-detail-page/index.html?id=" + submission.data.dsrid;
               } else if (resultJSON.status === "Completed") {
-                window.location.href = "../status-detail-page/?id=" + submission.data.dsrid;
+                window.location.href = "../status-detail-page/index.html?id=" + submission.data.dsrid;
                 localStorage.setItem(submission.data.dsrid, JSON.stringify(resultJSON.data))
               } else {
                 document.getElementById('resultstatus').style.color = "red";

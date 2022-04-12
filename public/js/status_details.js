@@ -1,7 +1,8 @@
 (function($){
 
   const urlParams = new URLSearchParams(window.location.search);
-  const id = document.querySelector("input[name=dsr_req_id]").value //urlParams.get("id");
+ // const id = document.querySelector("input[name=dsr_req_id]").value //urlParams.get("id");
+ const id = urlParams.get("id");
   const tableHeaderKeyMap = [
       {
           'label': 'First Name',
@@ -53,7 +54,8 @@
       document.getElementById('dsrId').innerHTML = '<div class="row"><div class="col-4 font-weight-bold">Request number:</div><div class="col-sm capitalize">' +id + '</div></div>';
   }
   dsrId = document.getElementById('dsrId').getAttribute("data-value");
-  data = JSON.parse(document.querySelector("input[name=status_details_data]").value)
+  data = JSON.parse(localStorage.getItem(dsrId));
+  //data = JSON.parse(document.querySelector("input[name=status_details_data]").value)
   if(data == null) {
       window.location = "status.html?id="+id
   }
